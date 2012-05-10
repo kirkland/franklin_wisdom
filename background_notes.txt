@@ -8,3 +8,4 @@ Imagery to put in background:
 -- Library.
 -- Portrait.
 -- Bifocals.
+-- Famous quotes.
