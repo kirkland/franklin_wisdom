@@ -1,2 +1,10 @@
-%h1
-  test
+%h1#title
+  Ben Franklin's Virtues
+
+%ol#virtues
+  - @virtues.each do |virtue|
+    %li
+      %span.name
+        = succeed ':' do
+          = virtue.name
+      %span.description= virtue.content
