@@ -3,10 +3,11 @@ class MailController < ApplicationController
     @email_address = params[:email]
 
     if @email_address.present?
-      if @email = Email.create(:address => @email_address)
+      @email = Email.new(:address => @email_address)
+      if @email.save
         flash[:notice] = "Thanks for signing up. Your first email will come immediately. Please confirm your subscription by clicking the link in there."
       else
-        flash[:error] = "Something went wrong."
+        flash[:error] = @email.errors.messages.values.last.last
       end
     else
       flash[:error] = "Please enter an email address."
