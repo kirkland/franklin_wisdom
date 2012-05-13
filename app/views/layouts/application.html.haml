@@ -8,4 +8,8 @@
 
   %body
     #content
+      -if flash[:error].present?
+        = render 'layouts/flash', :type => :error, :message => flash[:error]
+      -elsif flash[:notice].present?
+        = render 'layouts/flash', :type => :notice, :message => flash[:notice]
       = yield
