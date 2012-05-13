@@ -1,9 +1,6 @@
 Franklin::Application.routes.draw do
-  resources :pages do
-    member do
-      get 'home'
-    end
-  end
+  post "/subscribe" => "mail#subscribe"
+  get "/unsubscribe" => "mail#unsubscribe"
 
-  root :to => "pages#home", :id => 'home'
+  root :to => "pages#home"
 end
