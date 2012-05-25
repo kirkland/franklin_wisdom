@@ -41,7 +41,7 @@ Franklin::Application.configure do
     address: "smtp.gmail.com",
     port: 587,
     domain: 'kirklander.info',
-    user_name: 'rob@kirklander.info',
+    user_name: 'rob2@kirklander.info',
     password: 'ciiMe0Oh',
     authentication: 'plain',
     enable_starttls_auto: true
