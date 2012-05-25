@@ -15,4 +15,14 @@ class Virtue < Struct.new(:name, :content)
      Virtue.new('Humility', 'Imitate Jesus and Socrates'),
     ]
   end
+
+  def self.find(id)
+    index = id - 1
+
+    if id > all.length
+      raise "Unknown Virtue."
+    end
+
+    all[index]
+  end
 end
