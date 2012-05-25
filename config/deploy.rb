@@ -1,8 +1,8 @@
 set :application, "franklin_wisdom"
   # TODO: Iterate over this in a job that is passed a list of emails.
-set :repository,  "set your repository location here"
+set :repository,  "git://github.com/kirkland/franklin_wisdom.git"
 
-set :scm, :subversion
+set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "robmk.com"                          # Your HTTP server, Apache/etc
