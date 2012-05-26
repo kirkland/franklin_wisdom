@@ -1,5 +1,6 @@
+require "bundler/capistrano"
+
 set :application, "franklin_wisdom"
-  # TODO: Iterate over this in a job that is passed a list of emails.
 set :repository,  "git://github.com/kirkland/franklin_wisdom.git"
 
 set :scm, :git
