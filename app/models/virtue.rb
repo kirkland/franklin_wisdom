@@ -1,4 +1,7 @@
 class Virtue < Struct.new(:name, :content)
+
+  has_many :sent_emails
+
   def self.all
     [Virtue.new('Temperance', 'Eat not to dullness; drink not to elevation.'),
      Virtue.new('Silence', 'Speak not but what may benefit others or yourself; Avoid trifling Conversation.'),
