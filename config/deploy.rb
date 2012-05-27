@@ -1,5 +1,7 @@
 require "bundler/capistrano"
 
+default_environment['PATH'] = "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+
 set :application, "franklin_wisdom"
 set :repository,  "git://github.com/kirkland/franklin_wisdom.git"
 
