@@ -1,5 +1,7 @@
 module Jobs
   class SendAllEmails
+    @queue = 'email'
+
     def self.perform(virtue_id)
       virtue = Virtue.find(virtue_id)
 
