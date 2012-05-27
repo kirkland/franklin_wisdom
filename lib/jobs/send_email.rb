@@ -1,6 +1,6 @@
 module Jobs
-  class SendEmail < Struct.new(:email_id, :virtue_id)
-    def self.perform
+  class SendEmail
+    def self.perform(email_id, virtue_id)
       email = Email.find(email_id)
       virtue = Virtue.find(virtue_id)
 
@@ -11,7 +11,7 @@ module Jobs
         raise "Tried to send another email too soon to email: #{email_id}, virtue: #{virtue_id}."
       end
 
-      Mailer.virtue(virtue, email).deliver
+      Mailer.virtue(virtue_id, email_id).deliver
     end
   end
 end
