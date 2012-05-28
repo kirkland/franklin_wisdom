@@ -3,4 +3,6 @@ Franklin::Application.routes.draw do
   get "/unsubscribe" => "mail#unsubscribe"
 
   root :to => "pages#home"
+
+  mount Resque::Server, :at => "/resque"
 end
