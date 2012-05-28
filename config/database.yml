@@ -24,6 +24,6 @@ production:
   min_messages: warning
   reconnect: true
   pool: 5
-  username: postgres
-  password: postgres
+  username: franklin
+  password: secret
   database: franklin_production
