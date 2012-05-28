@@ -24,6 +24,7 @@ production:
   min_messages: warning
   reconnect: true
   pool: 5
+  host: localhost
   username: franklin
   password: secret
   database: franklin_production
