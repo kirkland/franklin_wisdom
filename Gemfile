@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'resque'
 gem 'capistrano'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
