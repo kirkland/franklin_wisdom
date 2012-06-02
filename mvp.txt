@@ -1,0 +1,5 @@
+========== 2012-06-01 ==========
+
+Once a week, automatically send that week's virtue to all list members.
+
+Put an unsubscribe link in each email.
