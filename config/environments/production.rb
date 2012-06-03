@@ -65,6 +65,10 @@ Franklin::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
+  # This is necessary for references to assets in sass files to work (and probably other places too),
+  # when the app runs in the /franklin sub-uri.
+  config.assets.prefix = "/franklin/assets"
+
   ActionMailer::Base.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,

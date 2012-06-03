@@ -6,7 +6,7 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-  %body{:style => "background-image: #{Rails.env.production? ? 'url(/franklin/assets/grungy_paper.jpg)' : 'url(/assets/grungy_paper.jpg)'}"}
+  %body
     #content
       -if flash[:error].present?
         #flash{:class => 'error'}
